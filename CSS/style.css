@@ -1,0 +1,325 @@
+:root {
+    --SIZE_CAMERA: 30px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: hsl(270, 20%, 96%);
+}
+
+.container {
+    font-family: Rubik, sans-serif;
+    background-color: hsl(270, 20%, 96%);
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 100px;
+}
+
+.figura {
+    position: absolute;
+    background: linear-gradient( hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    width: 450px;
+    height: 900px;
+    border-radius: 0px 0px 250px 250px;
+    align-self: flex-start;
+    left: -120px;
+}
+.fig{
+    position: absolute;
+    background:  #f1f0f0;
+    width: 450px;
+    height: 800px;
+    border-radius: 250px 250px 0px 0px;
+    align-self: flex-end;
+    right: -120px;
+}
+.const_phone {
+    display: flex;
+    justify-content: end;
+}
+
+.telefono {
+    margin: 100px 0px;
+    width: min(80%, 375px);
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    position: relative;
+    align-self: flex-start;
+    box-shadow: 1rem 1rem 50px rgba(170, 0, 255, 0.1); 
+}
+
+.encabezado {
+    background: linear-gradient(to left, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    text-align: center;
+    justify-content: start;
+    align-items: end;
+    display: flex;
+    gap: 20px;
+    border-radius: 0px 0px 20px 20px;
+    position: absolute;
+    width: calc(100% - 40px);
+    padding: 10px 10px;
+    padding-top: var(--SIZE_CAMERA);
+    border-radius: 20px;
+    height: 12%;
+}
+
+.encabezado_camera {
+    width: 200px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(35%);
+    height: var(--SIZE_CAMERA);
+    border-radius: 0px 0px 20px 20px;
+}
+
+.encabezado img {
+    display: flex;
+    width: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    position: relative;
+    right: -5px;
+    margin-right: 15px;
+    border: 2px solid white;
+}
+
+.inf_user {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: white;
+    right: 23px;
+}
+.inf_user p{
+    color: rgb(196, 196, 196);
+}
+.cuerpo {
+    background-color: hsl(270, 20%, 96%);
+    padding: 20px;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.sounds {
+    background-color:  hsl(206, 6%, 79%);
+    border-radius: 1rem;
+    padding: 10px;
+    margin: 20px;
+    width: 80%;
+    margin-top: 100px;
+    position: relative;
+    left: -25px;
+    color: hsl(276, 55%, 52%);
+}
+
+.send {
+    background-color:  hsl(206, 6%, 79%);
+    border-radius: 1rem;
+    padding: 10px;
+    margin: 20px;
+    width: 80%;
+    position: relative;
+    left: -25px;
+    color: hsl(276, 55%, 52%);
+}
+
+.imgs {
+    display: flex;
+    width: 100%;
+    justify-content: right;
+    gap: 10px;
+    position: relative;
+    right: -5px;
+}
+
+img {
+    display: inline-block;
+    height: auto;
+    width: 60px;
+    border-radius: 20px;
+}
+
+.here {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 1rem;
+    padding: 10px;
+    margin: 20px;
+    width: 80%;
+    position: relative;
+    right: -45px;
+    color:  hsl(271, 15%, 43%);
+}
+
+.can {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 1rem;
+    padding: 10px;
+    margin: 20px;
+    width: 50%;
+    position: relative;
+    right: -130px;
+    color:  hsl(271, 15%, 43%);
+}
+
+.looks {
+    background-color:  hsl(206, 6%, 79%);
+    border-radius: 1rem;
+    padding: 10px;
+    margin: 20px;
+    width: 80%;
+    position: relative;
+    left: -25px;
+    color: hsl(276, 55%, 52%);
+}
+
+.minute {
+    background: linear-gradient(to right, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    border-radius: 1rem 10px 10px 1px ;
+    padding: 15px;
+    margin: 10px;
+    display: flex;
+    position: relative;
+    left: -15px;
+    width: 260px;
+    height: 47px;
+    color: white;
+}
+.minute h5{
+    font-size: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.hour {
+    background: linear-gradient(to right, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    border-radius: 1rem 10px 10px 1px;
+    padding: 15px;
+    margin: 10px;
+    display: flex;
+    position: relative;
+    left: -15px;
+    height: 47px;
+    width: 260px;
+    color: white;
+}
+.hour h5{
+    font-size: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.money {
+    flex: 1; 
+    color: white;
+    font-weight: bold;
+    justify-content: end;
+    align-items: end;
+    display: flex;
+    margin-right: 17px;
+}
+
+.mensaje {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 1rem;
+    padding: 10px;
+    margin-top: 20px;
+    width: 103%;
+    font-size: 13px;
+    color: gray;
+    display: flex;
+    position: relative;
+    right: 3px;
+    align-items: center;
+    justify-content: center;
+}
+
+.text {
+    display: inline-block;
+    width: 100%;
+    margin-left: 10px;
+    position: relative;
+    top: -20px;
+    justify-content: center;
+}
+.text h1 {
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: hsl(271, 36%, 24%);
+}
+.text p{
+    color:  hsl(270, 7%, 64%);
+}
+.flecha{
+    display: flex;
+    position: relative;
+    left: 18px;
+    margin-bottom: 10px;
+    color: white;
+}
+.icono{
+    display: flex;
+    margin-left: 50%;
+    background-color: hsl(271, 36%, 24%);
+    border-radius: 30px;
+    font-size: 25px;
+    color: white;
+}
+.circulo{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.puntos{
+    display: flex;
+    position: relative;
+    left: 30px;
+    margin-bottom: 10px;
+    color: white;
+}
+    
+@media screen and (max-width: 1000px) {
+    .container {
+        grid-template-columns: 1fr;
+        gap: 0px;
+    }
+
+    .const_phone {
+        justify-content: center;
+    }
+
+    .text {
+        width: 50%;
+        max-width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        text-align: center;
+    }
+
+    .text h1 {
+        font-size: 40px;
+        color: hsl(271, 36%, 24%);
+        position: relative;
+    }
+    .fig{
+        z-index: -1;
+    }
+    .telefono{
+        box-shadow: 1rem 1rem 50px rgba(170, 0, 255, 0.1); 
+    }
+}
